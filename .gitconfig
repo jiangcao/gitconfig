@@ -1,0 +1,20 @@
+[push]
+	default = matching
+[user]
+	name = Jiang Cao
+	email = jiang.cao89@gmail.com
+[core]
+	excludesfile = /Users/jiangcao/.gitignore_global
+	editor = /usr/bin/vim
+ 
+[alias]
+	st = status
+	co = checkout
+	ci = commit
+	br = branch
+	unstage = reset HEAD
+	last = log -1
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    tree = log --graph --full-history --all --color \
+                --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"
+
